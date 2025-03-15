@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Get local IP address
-ip_address=$(hostname -I | awk '{print $1}')
+#ip_address=$(hostname -I | awk '{print $1}')
+
+# ap0のIPアドレスを取得する場合
+ip_address=$(ip addr show ap0 | grep "inet " | awk '{print $2}' | cut -d/ -f1)
 
 # Directory of the script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
