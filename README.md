@@ -6,6 +6,7 @@ A Streamlit application that provides a chat interface for interacting with loca
 
 - Ollama installed on your system (visit https://ollama.com/download)
 - Python 3.11+ with virtualenv
+- 最初にstreamlitが使えるvenvをactivateしておきましょう。
 
 ## Setup
 
